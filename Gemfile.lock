@@ -120,6 +120,7 @@ GEM
     rails-assets-bootstrap-material-design (0.1.0)
     rails-assets-bootstrap-sass (3.0.2)
       rails-assets-jquery (>= 1.9.0)
+    rails-assets-fontawesome (4.2.0)
     rails-assets-jquery (2.1.1)
     rails-deprecated_sanitizer (1.0.3)
       activesupport (>= 4.2.0.alpha)
@@ -196,6 +197,7 @@ DEPENDENCIES
   rails (= 4.2.0.beta2)
   rails-assets-bootstrap-material-design
   rails-assets-bootstrap-sass
+  rails-assets-fontawesome
   sass-rails (~> 5.0.0.beta1)
   sdoc (~> 0.4.0)
   slim
