@@ -1,4 +1,5 @@
 source 'https://rubygems.org'
+source 'https://rails-assets.org'
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
@@ -43,3 +44,10 @@ group :development, :test do
   gem 'spring'
 end
 
+
+gem 'rails-assets-bootstrap-sass'
+
+gem 'guard'
+gem 'guard-rails'
+gem 'rails-assets-bootstrap-material-design'
+gem 'slim'
