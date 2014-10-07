@@ -1,4 +1,4 @@
 class ListController < ApplicationController
-  def view
+  def index
   end
 end
