@@ -45,10 +45,20 @@ group :development, :test do
 end
 
 
-gem 'rails-assets-bootstrap-sass'
 
+# Auto restart
 gem 'guard'
 gem 'guard-rails'
+
+# Assets
+gem 'rails-assets-bootstrap-sass'
 gem 'rails-assets-bootstrap-material-design'
 gem 'rails-assets-fontawesome'
+
+
+# Templating
+
 gem 'slim'
+
+
+
