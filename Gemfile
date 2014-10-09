@@ -57,8 +57,12 @@ gem 'rails-assets-fontawesome'
 
 
 # Templating
-
 gem 'slim'
 
+# Console
+gem 'pry', :group => :development
+gem 'pry-rails', :group => :development
 
+# Mixins
+gem 'bourbon'
 
