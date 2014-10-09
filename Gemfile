@@ -1,5 +1,5 @@
 source 'https://rubygems.org'
-source 'https://rails-assets.org'
+source 'https://rails-assets.org' # <3
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
