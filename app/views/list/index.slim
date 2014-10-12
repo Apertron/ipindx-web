@@ -2,3 +2,21 @@
   .container
     h1 The List
     p This is the web interface for the list of Ipindx.
+
+table.table.table-bordered.table-hover
+  thead
+    tr
+      th IP
+      th Recorded
+      th Last seen
+  tbody
+  - @list.each do |n| # this is where the magic happens
+    tr
+      td
+        = n['ip']
+      td
+        = n['recorded']
+      td
+        = n['last_seen']
+
+
