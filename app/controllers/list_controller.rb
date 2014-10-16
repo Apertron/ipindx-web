@@ -6,7 +6,6 @@ class ListController < ApplicationController
       json_processed = JSON.load File.read n
 
       # TODO: search bar
-
       list << json_processed
     end
     @list = list
