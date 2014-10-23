@@ -6,27 +6,24 @@ html
     = csrf_meta_tags
 
   body
-    nav.navbar.navbar-default role="navigation"
-      .navbar-header
-        button.navbar-toggle data-target="#navbar-collapse" data-toggle="collapse"
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
+    .container-fluid
+        nav.navbar.navbar-default role="navigation"
+          .navbar-header
+            button.navbar-toggle data-target="#cl-1" data-toggle="collapse"
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
 
-        a.navbar-brand href="/" Ipindx
-      .collapse.navbar-collapse#navbar-collapse
-        ul.nav.navbar-nav
-          - [['Home', '/'], ['List', '/ip']].each do |z|
-            - if z[1] == request.fullpath
-              li.active
-                a href="#{z[1]}" #{z[0]}
-            - else
-              li
-                a href="#{z[1]}" #{z[0]}
-
-
-
+            a.navbar-brand href="/" Ipindx
+          .collapse.navbar-collapse#cl-1
+            ul.nav.navbar-nav
+              - [['Home', '/'], ['List', '/ip']].each do |z|
+                - if z[1] == request.fullpath
+                  li.active
+                    a href="#{z[1]}" #{z[0]}
+                - else
+                  li
+                    a href="#{z[1]}" #{z[0]}
 
     = yield
-
