@@ -10,7 +10,18 @@
     thead
       tr
         th IP address
+        th Recorded
+        th Last seen
+        th Reasons
     tbody
       tr
         td
           = @ip['ip']
+        td
+          = @ip['recorded']
+        td
+          = @ip['last_seen']
+        td
+          - @ip['categories'].each do |r|
+            = "#{r}"
+              
