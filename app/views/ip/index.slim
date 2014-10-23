@@ -1,0 +1,16 @@
+- if @ip == 'NaN'
+
+    #dat
+      a href="http://localhost:3000"
+        button.btn.btn-material-lightgrey
+          h2 IP address not found.
+          p#ok Go back?
+- else
+  table.table.table-striped
+    thead
+      tr
+        th IP address
+    tbody
+      tr
+        td
+          = @ip['ip']
