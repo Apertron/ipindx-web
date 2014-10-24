@@ -18,7 +18,7 @@ html
             a.navbar-brand href="/" Ipindx
           .collapse.navbar-collapse#cl-1
             ul.nav.navbar-nav
-              - [['Home', '/'], ['List', '/ip']].each do |z|
+              - [['Home', '/']].each do |z|
                 - if z[1] == request.fullpath
                   li.active
                     a href="#{z[1]}" #{z[0]}
